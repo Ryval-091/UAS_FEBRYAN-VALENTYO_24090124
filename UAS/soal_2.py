@@ -8,14 +8,15 @@ df = pd.DataFrame([
 ],columns=['mahasiswa 1','mahasiswa 2','mahasiswa 3'], index=['algoritma dan struktur data 2','matematika numerik'])
 
 
-df['total nilai algoritma'] = df.sum(axis=1)
-df['total nilai matematika'] = df.sum(axis=1)
+df1 = df.mean(axis=1)
+df3 = df.mean(axis=0)
 
 print(f'rata-rata nilai untuk setiap mata kuliah : ')
-print('nilai algoritma dan struktur data',df)
-print('nilai matematika numerik',df)
+print('nilai algoritma dan struktur data',df1)
+print('nilai matematika numerik',df1)
 
 print(f'rata-rata nilai untuk setiap mahasiswa : ')
-print('nilai mahasiswa 1 : ', )
-print('nilai mahasiswa 2 : ', )
-print('nilai mahasiswa 3 : ', )
+print(
+    ''' nilai mahasiswa 1 :
+        nilai mahasiswa 2 : 
+        nilai mahasiswa 3 : ''',df3)
